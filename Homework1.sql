@@ -4,7 +4,6 @@ CREATE TABLE "users" (
   "email" varchar,
   "password" varchar,
   "age" int8,
-  "user_courses_id" uuid,
   "users_level_id" int8,
   "user_role_id" uuid
 );
@@ -49,7 +48,6 @@ CREATE TABLE "categories" (
 CREATE TABLE "roles" (
   "id" uuid PRIMARY KEY,
   "name" varchar,
-  "clearance_type" uuid
 );
 
 insert into users (id, name, email, "password", age) values ('bbdcf518-ed23-4f8b-85f8-1c72f5a2fc30', 'Denis Mendoza', 'denis@gmail.com', '1234567', '31');
